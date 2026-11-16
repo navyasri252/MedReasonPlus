@@ -1,0 +1,21 @@
+{
+  "models": {
+    "convnext": {
+      "method": "GradCAMPlusPlus",
+      "target": "features[7][-1].block[0]",
+      "TP": 389,
+      "TN": 152,
+      "FP": 82,
+      "FN": 1
+    },
+    "hybrid": {
+      "method": "EigenCAM",
+      "target": "features[7][-1].block[0] (ConvNeXt branch)"
+    },
+    "cxformer": {
+      "method": "EigenCAM",
+      "target": "encoder.layer[-1].layernorm_before"
+    }
+  },
+  "output_dir": "C:\\Users\\navya\\Downloads\\MedReasonPlus\\reports\\gradcam"
+}

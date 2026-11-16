@@ -1,0 +1,27 @@
+# MedReason++ — Python dependencies
+# Install with: pip install -r requirements.txt
+
+# Core ML
+torch==2.15.0
+torchvision==0.29.2
+transformers>=4.40.0
+google-genai>=0.8.0
+
+# Web server
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# ML utilities
+scikit-learn>=1.4.0
+numpy>=1.26.0
+Pillow>=10.0.0
+
+# GradCAM
+grad-cam>=1.5.0
+
+# Visualisation
+matplotlib>=3.8.0
+
+# Optional: OpenCV (needed by CXformer processor)
+opencv-python-headless>=4.9.0
